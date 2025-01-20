@@ -227,3 +227,10 @@ section{
   height: 70px;
   border-radius: 50%;
 }
+
+.grid-blog{
+  display: grid;
+  grid-template-columns: 550px 300px 300px;
+  grid-template-rows: repeat(3, 300px);
+  gap: 24px;
+}
