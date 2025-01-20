@@ -16,6 +16,12 @@ body {
   color: rgb(17, 17, 17);
 }
 
+.main-container,
+.nav-section{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 a{
   color: rgb(17, 17, 17);
   text-decoration: none;
@@ -43,12 +49,6 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.main-container,
-.nav-section{
-  max-width: 80%;
-  margin: 0 auto;
 }
 
 .nav-section{
@@ -298,4 +298,65 @@ section{
 
 .date-3{
   background: rgb(93, 88, 240);
+}
+
+footer{
+  padding: 175px 300px;
+  background: rgb(1, 172, 253);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content{
+  width: 400px;
+}
+
+.branding{
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.branding img{
+  width: 100px;
+}
+
+.branding h3{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.branding h3 p{
+  color: #fff;
+  font-size: 40px;
+}
+
+.footer-para{
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+footer .heading-tertiary{
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-nav li a{
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.social-nav{
+  list-style: none;
+  display: flex;
+  gap: 10px;
 }
