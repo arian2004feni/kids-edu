@@ -34,6 +34,11 @@ section{
   padding: 10px 48px;
 }
 
+.btn-link{
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .flex-center {
   display: flex;
   align-items: center;
@@ -106,7 +111,7 @@ section{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .heading-primary{
@@ -146,9 +151,79 @@ section{
   gap: 80px;
 }
 
+
 .section-title{
   font-size: 48px;
   font-weight: 700;
   text-align: center;
 }
 
+.card-container{
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  text-align: center;
+}
+
+.card{
+  /* border: 1px solid #000; */
+  width: 360px;
+  padding: 80px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  border-radius: 18px;
+  box-shadow: inset 0px 0px 28px 1px rgba(0, 0, 0, 0.05);
+}
+
+.card-1{
+  border: 1px solid rgb(222, 245, 255);
+  background: linear-gradient(to bottom, rgb(222, 245, 255),transparent 40%),#fff;
+}
+
+.card-1 a{
+  color: rgb(100, 200, 255);
+}
+
+.card-2{
+  border: 1px solid rgb(255, 244, 220);
+  background: linear-gradient(to bottom, rgb(255, 244, 220),transparent 40%),#fff;
+}
+
+.card-2 a{
+  color: rgb(240, 170, 0);
+}
+
+.card-3{
+  border: 1px solid rgb(242, 232, 255);
+  background: linear-gradient(to bottom, rgb(242, 232, 255),transparent 40%),#fff;
+}
+
+.card-3 a{
+  color: rgb(135, 0, 255);
+}
+
+.heading-tertiary{
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(32, 32, 32);
+}
+
+.btn-container{
+  text-align: center;
+}
+
+.btn-container button{
+  font-size: 40px;
+  font-weight: 700;
+  /* display: inline-block; */
+  margin: 8px;
+  border: none;
+  background: rgb(254, 163, 1);
+  color: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
