@@ -5,16 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kids Education</title>
     <!-- favicons start -->
-    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
     <link rel="shortcut icon" href="/assets/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
     <meta name="apple-mobile-web-app-title" content="Kids Edu" />
     <link rel="manifest" href="/assets/site.webmanifest" />
     <!-- favicon ends -->
+    <style>
+      body {
+        font-family: "Lato", sans-serif;
+      }
+
+      .overlay {
+        height: 100%;
+        width: 0%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.979);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        list-style: none;
+      }
+
+      .overlay-content li:not(:last-child){
+        margin-bottom: 20px;
+      }
+
+      .mobile-btn{
+        position: relative;
+        font-weight: 400;
+      }
+      .mobile-btn::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        transition: width 0.3s;
+        z-index: 1;
+      }
+      .mobile-btn:hover::before{
+        width: 100%;
+      }
+      #contact{
+        padding: 8px 22px;
+        border-radius: 12px;
+      }
+
+      .overlay a {
+        text-decoration: none;
+        font-size: 30px;
+        transition: 0.3s;
+      }
+
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-family: "Raleway", sans-serif;
+        font-size: 80px;
+        font-weight: 200;
+        color: rgb(107, 107, 107);
+      }
+
+      @media screen and (max-height: 450px) {
+        .overlay a {
+          font-size: 20px;
+        }
+        .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+        }
+      }
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <li><a class="mobile-btn" id="home" href="#">Home</a></li>
+        <li><a class="mobile-btn" id="about" href="#">About</a></li>
+        <li><a class="mobile-btn" id="facilities" href="#">Facilities</a></li>
+        <li><a class="mobile-btn" id="admission" href="#">Admission</a></li>
+        <li><a class="mobile-btn btn" id="contact" href="#">Contact</a></li>
+      </div>
+    </div>
+
     <nav class="nav-section">
       <a href="#" class="nav-logo flex-center">
         <img src="./assets/logo.png" alt="logo" />
@@ -29,8 +129,11 @@
       <div class="nav-button flex-center">
         <a class="btn" id="contact" href="#contact"><span>Contact</span></a>
       </div>
-      <div class="mobile-nav">
-        <a href="#"><span>&mdash;</span><span>&mdash;</span><span>&mdash;</span></a>
+
+      <div onclick="openNav()" class="mobile-nav">
+        <a href="#"
+          ><span>&mdash;</span><span>&mdash;</span><span>&mdash;</span></a
+        >
       </div>
     </nav>
     <main class="main-container">
@@ -219,5 +322,16 @@
         </ul>
       </div>
     </footer>
+    <script>
+      /* Open when someone clicks on the span element */
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      /* Close when someone clicks on the "x" symbol inside the overlay */
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
   </body>
 </html>

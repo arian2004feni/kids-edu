@@ -13,7 +13,7 @@ body {
   font-weight: 700;
   box-sizing: border-box;
   color: rgb(17, 17, 17);
-  background-image: linear-gradient(to top, rgba(254, 163, 1, 0.4),rgba(255, 255, 255, 0.3) 70%);
+  background-image: linear-gradient(to top, rgba(254, 163, 1, 0.35),rgba(255, 255, 255, 0.3) 80%);
   /* background-position: 0 1500px; */
 }
 
@@ -32,7 +32,7 @@ section{
   padding: 80px 0;
   background-image: url("assets/bg.png");
   background-attachment: fixed;
-  background-size: 50vw;
+  background-size: 60vw;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -85,6 +85,9 @@ section{
   position: relative;
 }
 
+
+
+.overley-content a::before,
 .btn-link::before{
   content: "";
   width: 0;
@@ -96,6 +99,7 @@ section{
   transition: width 0.3s;
 }
 
+.overley-content a:hover::before,
 .btn-link:hover::before{
   width: 100%;
 }
@@ -532,6 +536,9 @@ footer .heading-tertiary{
   .heading-primary{
     font-size: 57px;
   }
+  section{
+    background-size: 65vw;
+  }
 }
 
 
@@ -555,6 +562,9 @@ footer .heading-tertiary{
   }
   .article-expand .blog-date{
     padding: 14px 28px;
+  }
+  section{
+    background-size: 68vw;
   }
   
 }
@@ -597,6 +607,7 @@ footer .heading-tertiary{
   }
   section{
     padding: 60px 0 60px 0;
+    background-size: 70vw;
   }
   .section-title{
     font-size: 42px;
@@ -652,6 +663,7 @@ footer .heading-tertiary{
   }
   section{
     padding: 60px 0 60px 0;
+    background-size: 75vw;
   }
   /* .card-container{
     flex-wrap: wrap;
@@ -704,6 +716,9 @@ footer .heading-tertiary{
 }
 
 @media (max-width:1090px){
+  body{
+    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.35),rgba(255, 255, 255, 0.3) 70%);
+  }
   .heading-primary{
     font-size: 40px;
   }
@@ -724,6 +739,9 @@ footer .heading-tertiary{
   }
   .btn{
     font-size: 18px;
+  }
+  section{
+    background-size: 80vw;
   }
 }
 
@@ -752,7 +770,9 @@ footer .heading-tertiary{
   }
 }
 @media (max-width:980px){
-  
+  #contact{
+    color: #fff
+  }
   .mobile-nav{
     display: flex;
     flex-direction: column;
@@ -808,14 +828,26 @@ footer .heading-tertiary{
     list-style: none;
     gap: 20px;
   }
+  section{
+    background-size: 88vw;
+  }
   footer{
     flex-wrap: wrap;
-    padding: 10vw 24vw;
+    padding: 10vw 15vw;
   }
 
   .footer-content{
-    width: 500px;
+    width: 100%;
     margin-bottom: 5vw;
+  }
+  .footer-para{
+    font-size: 18px;
+  }
+  .branding img{
+    width: 120px;
+  }
+  .branding h3 p{
+    font-size: 38px;
   }
   .nav-section{
     border-bottom: 1px solid orange;
@@ -826,6 +858,9 @@ footer .heading-tertiary{
 }
 
 @media (max-width:880px){
+  body{
+    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.35),rgba(255, 255, 255, 0.3) 60%);
+  }
   .section-hero{
     flex-wrap: wrap;
     justify-content: center;
@@ -856,10 +891,16 @@ footer .heading-tertiary{
   .section-title{
     font-size: 38px;
   }
+  section{
+    background-size: 95vw;
+  }
   
 }
 
 @media (max-width:845px){
+  body{
+    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.35),rgba(255, 255, 255, 0.3) 55%);
+  }
   .grid-blog{
     grid-template-columns: 300px 300px;
     grid-template-rows: repeat(3, 300px);
@@ -881,6 +922,9 @@ footer .heading-tertiary{
 }
 
 @media (max-width:740px){
+  body{
+    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.35),rgba(255, 255, 255, 0.3) 50%); 
+  }
   .hero-img img{
     width: 60vw;
   }
@@ -901,6 +945,9 @@ footer .heading-tertiary{
   
   .footer-content{
     width: 65vw;
+  }
+  section{
+    background-size: 106vw;
   }
 }
 @media (max-width:670px){
@@ -924,11 +971,21 @@ footer .heading-tertiary{
 }
 
 @media (max-width:620px){
+  body{
+    background-image: linear-gradient(to top, rgba(254, 163, 1, 0.35),rgba(255, 255, 255, 0.3) 60%);
+  }
   .grid-blog{
     grid-template-columns: 300px;
     grid-template-rows: 280px;
     gap: 20px;
     justify-content: center;
+  }
+  section{
+    background-size: 110vw;
+  }
+  .footer-links{
+    width: 100%;
+    margin-bottom: 40px;
   }
 }
 
@@ -942,9 +999,13 @@ footer .heading-tertiary{
   .main-container{
     max-width: 90%;
   }
+  section{
+    background-size: 120vw;
+  }
   footer{
+    gap: 0;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 50px 5vw 50px 16vw;
   }
   .heading-primary{
     font-size: 8vw;
