@@ -38,6 +38,22 @@ section{
   gap: 80px;
 }
 
+.mobile-nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;justify-content: center;
+}
+
+.mobile-nav a{
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 8px;
+  font-size: 50px;
+  font-weight: 200;
+}
+
 .btn{
   font-size: 22px;
   font-weight: 600;
@@ -780,5 +796,110 @@ footer .heading-tertiary{
   .nav-links {
     list-style: none;
     gap: 20px;
+  }
+}
+
+@media (max-width:880px){
+  .section-hero{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-img{
+    order: 1;
+    align-self: center;
+  }
+  .hero-img img{
+    width: 60vw;
+  }
+  .hero-content{
+    order: 2;
+    text-align: center;
+    gap: 28px;
+    margin: 40px 0;
+  }
+  .heading-primary{
+    font-size: 5.5vw;
+    padding: 0 10vw;
+  }
+  .paragraph{
+    font-size: 18px;
+  }
+  .section-curriculum{
+    padding: 80px 0;
+  }
+  .section-title{
+    font-size: 38px;
+  }
+  footer{
+    flex-wrap: wrap;
+    padding: 10vw 24vw;
+  }
+  .branding{
+    transform: translateX(-20px);
+  }
+  .footer-content{
+    width: 500px;
+    margin-bottom: 5vw;
+  }
+  .nav-section{
+    border-bottom: 1px solid orange;
+    max-width: 100%;
+    padding: 20px 10%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width:840px){
+  .grid-blog{
+    grid-template-columns: 300px 300px;
+    grid-template-rows: repeat(3, 300px);
+    gap: 20px;
+    justify-content: center;
+  }
+  .article-content{
+    padding: 30px ;
+  }
+  .blog-date{
+    font-size: 14px;
+  }
+}
+
+@media (max-width:740px){
+  footer{
+    flex-wrap: wrap;
+    padding: 12vw 16vw;
+  }
+  .hero-content{
+    margin: 0 0 40px 0;
+  }
+  .heading-primary{
+    font-size: 6.5vw;
+    padding: 0 5vw;
+  }
+  .nav-section{
+    margin-bottom: 20px;
+  }
+  
+  .footer-content{
+    width: 65vw;
+  }
+}
+@media (max-width:670px){
+  .grid-blog{
+    grid-template-columns: repeat(2, 260px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 20px;
+    justify-content: center;
+  }
+  .article-content{
+    padding: 20px;
+  }
+  .blog-date{
+    padding: 8px 16px;
+    top: -22px;
+  }
+  .heading-primary{
+    font-size: 46px;
+    padding: 0;
   }
 }
