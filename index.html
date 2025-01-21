@@ -48,7 +48,7 @@
       }
 
       .overlay-content li:not(:last-child){
-        margin-bottom: 20px;
+        margin-bottom: 25px;
       }
 
       .mobile-btn{
@@ -67,9 +67,11 @@
       .mobile-btn:hover::before{
         width: 100%;
       }
-      #contact{
+
+      .overlay-content #contact{
         padding: 8px 22px;
         border-radius: 12px;
+        /* margin-top: 25px; */
       }
 
       .overlay a {
@@ -107,11 +109,11 @@
         >&times;</a
       >
       <div class="overlay-content">
-        <li><a class="mobile-btn" id="home" href="#">Home</a></li>
-        <li><a class="mobile-btn" id="about" href="#">About</a></li>
-        <li><a class="mobile-btn" id="facilities" href="#">Facilities</a></li>
-        <li><a class="mobile-btn" id="admission" href="#">Admission</a></li>
-        <li><a class="mobile-btn btn" id="contact" href="#">Contact</a></li>
+        <li><a class="mobile-btn" id="home" href="#home">Home</a></li>
+        <li><a class="mobile-btn" id="about" href="#about">About</a></li>
+        <li><a class="mobile-btn" id="facilities" href="#facilities">Facilities</a></li>
+        <li><a class="mobile-btn" id="admission" href="#admission">Admission</a></li>
+        <li><a class="mobile-btn btn" id="contact" href="#contact">Contact</a></li>
       </div>
     </div>
 
@@ -121,10 +123,10 @@
         <span>school</span>
       </a>
       <ul class="nav-links flex-center">
-        <li><a id="home" href="#">Home</a></li>
-        <li><a id="about" href="#">About</a></li>
-        <li><a id="facilities" href="#">Facilities</a></li>
-        <li><a id="admission" href="#">Admission</a></li>
+        <li><a id="home" href="#home">Home</a></li>
+        <li><a id="about" href="#about">About</a></li>
+        <li><a id="facilities" href="#facilities">Facilities</a></li>
+        <li><a id="admission" href="#admission">Admission</a></li>
       </ul>
       <div class="nav-button flex-center">
         <a class="btn" id="contact" href="#contact"><span>Contact</span></a>
@@ -136,6 +138,10 @@
         >
       </div>
     </nav>
+    <marquee behavior="alternate" scrollamount="5">
+      <!-- contents -->
+       <p>Admissions are now open at <img src="/assets/logo.png" width="18" height="18" alt="logo"> Kids School! Enroll your child today for quality education, nurturing care, and holistic development. Limited seats available—secure your spot now!
+   </marquee>
     <main class="main-container">
       <header class="section-hero">
         <div class="hero-content">
@@ -204,6 +210,7 @@
           <a class="btn" href="#"><span>&gt;</span></a>
         </div>
       </section>
+    </main>
       <section class="section-stories">
         <h2 class="section-title">Our Stories</h2>
         <div class="grid-blog">
@@ -280,7 +287,6 @@
           <a class="btn" href="#"><span>View All</span></a>
         </div>
       </section>
-    </main>
     <footer>
       <div class="footer-content">
         <div class="branding">
